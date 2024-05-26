@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 
 // Define the content functions first
 const GoalsContent = () => (
@@ -273,7 +274,17 @@ const Sidebar = ({ sections }) => {
 const Content = ({ sections }) => {
   return (
     <div className="content">
-      <div className="header">Brew Bridge Dashboard</div>
+      <div className="header">Brew Bridge Dashboard
+      <div className="social-links">
+      <a href="https://www.linkedin.com/in/nodebrew" target="_blank" rel="noopener noreferrer">
+        <FaLinkedin size={30} />
+      </a>
+      <a href="https://wa.me/your-number" target="_blank" rel="noopener noreferrer">
+        <FaWhatsapp size={30} />
+      </a>
+    </div>
+      </div>
+
       {sections.map((section) => (
         <Section key={section.id} id={section.id} title={section.title} content={section.content} />
       ))}
