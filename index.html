@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentee-Mentor Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1e2125;
+            color: #ddd;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 50px auto;
+            background-color: #2b2e33;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #33363a;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+        }
+        .sidebar a {
+            color: #ddd;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .sidebar a:hover {
+            color: #fff;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            margin-left: 280px;
+        }
+        .header {
+            font-size: 28px;
+            font-weight: 600;
+            color: #ddd;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: 500;
+            color: #ddd;
+            margin-bottom: 10px;
+        }
+        .item-list {
+            margin-left: 20px;
+        }
+        .item {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .item-checkbox {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="header">Sections</div>
+            <a href="#goals">Goals and Objectives</a>
+            <a href="#meetings">Meeting Schedule</a>
+            <a href="#tasks">Task and Action Items</a>
+            <a href="#progress">Progress Tracking</a>
+            <a href="#resources">Resources and Materials</a>
+            <a href="#feedback">Feedback and Reflection</a>
+            <a href="#communication">Communication Log</a>
+            <a href="#development">Personal Development</a>
+            <a href="#notes">Notes and Ideas</a>
+            <a href="#contact">Contact Information</a>
+        </div>
+        <div class="content">
+            <div class="header">Mentee-Mentor Dashboard</div>
+
+            <div class="section" id="goals">
+                <div class="section-title">Goals and Objectives</div>
+                <ul class="item-list">
+                    <li class="item"><input type="checkbox" class="item-checkbox"> <strong>Short-term Goals:</strong>
+                        <ul class="item-list">
+                            <li class="item"><input type="checkbox" class="item-checkbox"> Goal 1: Description</li>
+                            <li class="item"><input type="checkbox" class="item-checkbox"> Goal 2: Description</li>
+                        </ul>
+                    </li>
+                    <li class="item"><input type="checkbox" class="item-checkbox"> <strong>Long-term Goals:</strong>
+                        <ul class="item-list">
+                            <li class="item"><input type="checkbox" class="item-checkbox"> Goal 1: Description</li>
+                            <li class="item"><input type="checkbox" class="item-checkbox"> Goal 2: Description</li>
+                        </ul>
+                    </li>
+                    <li class="item"><input type="checkbox" class="item-checkbox"> <strong>Objective Milestones:</strong>
+                        <ul class="item-list">
+                            <li class="item"><input type="checkbox" class="item-checkbox"> Milestone 1: Description</li>
+                            <li class="item"><input type="checkbox" class="item-checkbox"> Milestone 2: Description</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section" id="meetings">
+                <div class="section-title">Meeting Schedule</div>
+                <ul class="item-list">
+                    <li class="item"><strong>Upcoming Meetings:</strong>
+                        <ul class="item-list">
+                            <li class="item">Date & Time - Agenda: Description</li>
+                            <li class="item">Date & Time - Agenda: Description</li>
+                        </ul>
+                    </li>
+                    <li class="item"><strong>Past Meetings:</strong>
+                        <ul class="item-list">
+                            <li class="item">Date & Time - Summary/Notes</li>
+                            <li class="item">Date & Time - Summary/Notes</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section" id="tasks">
+                <div class="section-title">Task and Action Items</div>
+                <ul class="item-list">
+                    <li class="item"><strong>Pending Tasks:</strong>
+                        <ul class="item-list">
+                            <li class="item"><input type="checkbox" class="item-checkbox"> Task 1 - Due Date: Assigned To</li>
+                            <li class="item"><input type="checkbox" class="item-checkbox"> Task 2 - Due Date: Assigned To</li>
+                        </ul>
+                    </li>
+                    <li class="item"><strong>Completed Tasks:</strong>
+                        <ul class="item-list">
+                            <li class="item"><input type="checkbox" class="item-checkbox" checked> Task 1 - Completion Date</li>
+                            <li class="item"><input type="checkbox" class="item-checkbox" checked> Task 2 - Completion Date</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section" id="progress">
+                <div class="section-title">Progress Tracking</div>
+                <ul class="item-list">
+                    <li class="item"><strong>Key Performance Indicators (KPIs):</strong>
+                        <ul class="item-list">
+                            <li class="item">KPI 1 - Current Value: Target Value</li>
+                            <li class="item">KPI 2 - Current Value: Target Value</li>
+                        </ul>
+                    </li>
+                    <li class="item"><strong>Progress Updates:</strong>
+                        <ul class="item-list">
+                            <li class="item">Date - Update Summary</li>
+                            <li class="item">Date - Update Summary</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section" id="resources">
+                <div class="section-title">Resources and Materials</div>
+                <ul class="item-list">
+                    <li class="item"><strong>Documents:</strong>
+                        <ul class="item-list">
+                            <li class="item"><a href="#">Document 1</a> - Link/Attachment</li>
+                            <li class="item"><a href="#">Document 2</a> - Link/Attachment</li>
+                        </ul>
+                    </li>
+                    <li class="item"><strong>Learning Materials:</strong>
+                        <ul class="item-list">
+                            <li class="item"><a href="#">Material 1</a> - Link/Attachment</li>
+                            <li class="item"><a href="#">Material 2</a> - Link/Attachment</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section" id="feedback">
+                <div class="section-title">Feedback and Reflection</div>
+                <ul class="item-list">
+                    <li class="item"><strong>Mentee Feedback:</strong>
+                        <ul class="item-list">
+                            <li class="item">Date - Feedback Summary</li>
+                        </ul>
+                    </li>
+                    <li class="item"><strong>Mentor Feedback:</strong>
+                        <ul class="item-list">
+                            <li class="item">Date - Feedback Summary</li>
+                        </ul>
+                    </li>
+                    <li class="item"><strong>Self-Reflection:</strong>
+                        <ul class="item-list">
+                            <li class="item">Date - Reflection Notes</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section" id="communication">
+                <div class="section-title">Communication Log</div>
+                <ul class="item-list">
+                    <li class="item"><strong>Emails:</strong>
+                        <ul class="item-list">
+                            <li class="item">Date - Subject - Summary/Link</li>
+                            <li class="item">Date - Subject - Summary/Link</li>
+                        </ul>
+                    </li>
+                    <li class="item"><strong>Messages:</strong>
+                        <ul class="item-list">
+                            <li                             class="item">Date - Platform - Summary</li>
+                            <li class="item">Date - Platform - Summary</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section" id="development">
+                <div class="section-title">Personal Development</div>
+                <ul class="item-list">
+                    <li class="item"><strong>Skills to Develop:</strong>
+                        <ul class="item-list">
+                            <li class="item">Skill 1 - Plan to Develop: Description</li>
+                            <li class="item">Skill 2 - Plan to Develop: Description</li>
+                        </ul>
+                    </li>
+                    <li class="item"><strong>Courses/Workshops:</strong>
+                        <ul class="item-list">
+                            <li class="item"><a href="#">Course 1</a> - Link - Completion Status</li>
+                            <li class="item"><a href="#">Workshop 2</a> - Link - Completion Status</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section" id="notes">
+                <div class="section-title">Notes and Ideas</div>
+                <ul class="item-list">
+                    <li class="item"><strong>General Notes:</strong>
+                        <ul class="item-list">
+                            <li class="item">Note 1 - Description</li>
+                            <li class="item">Note 2 - Description</li>
+                        </ul>
+                    </li>
+                    <li class="item"><strong>Ideas for Improvement:</strong>
+                        <ul class="item-list">
+                            <li class="item">Idea 1 - Description</li>
+                            <li class="item">Idea 2 - Description</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section" id="contact">
+                <div class="section-title">Contact Information</div>
+                <ul class="item-list">
+                    <li class="item"><strong>Mentor Contact:</strong>
+                        <ul class="item-list">
+                            <li class="item">Email: mentor@example.com</li>
+                            <li class="item">Phone: (123) 456-7890</li>
+                        </ul>
+                    </li>
+                    <li class="item"><strong>Mentee Contact:</strong>
+                        <ul class="item-list">
+                            <li class="item">Email: mentee@example.com</li>
+                            <li class="item">Phone: (987) 654-3210</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
