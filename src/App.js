@@ -9,32 +9,21 @@ const GoalsContent = () => (
       <input type="checkbox" className="item-checkbox" /> <strong>Short-term Goals:</strong>
       <ul className="item-list">
         <li className="item">
-          <input type="checkbox" className="item-checkbox" /> Goal 1: Description
+          <input type="checkbox" className="item-checkbox" /> Goal 1: Familarize with Git, Github and Figma
         </li>
         <li className="item">
-          <input type="checkbox" className="item-checkbox" /> Goal 2: Description
-        </li>
-      </ul>
-    </li>
-    <li className="item">
-      <input type="checkbox" className="item-checkbox" /> <strong>Long-term Goals:</strong>
-      <ul className="item-list">
-        <li className="item">
-          <input type="checkbox" className="item-checkbox" /> Goal 1: Description
-        </li>
-        <li className="item">
-          <input type="checkbox" className="item-checkbox" /> Goal 2: Description
+          <input type="checkbox" className="item-checkbox" /> Goal 2: Exploring tech stacks
         </li>
       </ul>
     </li>
     <li className="item">
-      <input type="checkbox" className="item-checkbox" /> <strong>Objective Milestones:</strong>
+      <input type="checkbox" className="item-checkbox" /> <strong>Objectives:</strong>
       <ul className="item-list">
         <li className="item">
-          <input type="checkbox" className="item-checkbox" /> Milestone 1: Description
+          <input type="checkbox" className="item-checkbox" /> Goal 1: Research in a particular domain
         </li>
         <li className="item">
-          <input type="checkbox" className="item-checkbox" /> Milestone 2: Description
+          <input type="checkbox" className="item-checkbox" /> Goal 2: Create a project in a particular domain
         </li>
       </ul>
     </li>
